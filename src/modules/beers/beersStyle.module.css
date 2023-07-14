@@ -31,14 +31,12 @@ button:hover {
 }
 
 .block {
-  min-width: 500px;
+  min-width: 700px;
 
   margin: 20px auto;
   padding: 10px;
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
 
   background-color: gray;
   border: 2px solid black;
@@ -86,9 +84,11 @@ button:hover {
 }
 
 .block img {
-  width: 50px;
+  width: 35px;
+  height: auto;
 
-  margin: 5px auto;
+  margin: auto 0;
+  margin-right: 10px;
 }
 
 .info {
@@ -97,5 +97,11 @@ button:hover {
 
 .description,
 .tagline {
-  width: 300px;
+  width: 500px;
+}
+
+.description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
