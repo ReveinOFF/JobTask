@@ -11,6 +11,12 @@ export const useStoreBeers = create(
         data: [...beers],
         isLoading: false,
       })),
+    updateData: (beers) =>
+      set((state) => ({
+        isLoading: true,
+        data: [...state.data, ...beers],
+        isLoading: false,
+      })),
     removeData: (beerId) =>
       set((state) => ({
         isLoading: true,
